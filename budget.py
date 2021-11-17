@@ -6,15 +6,23 @@ print("Your budget is: ")
 print(budget)
 #How much did you spend?
 spent= int(input("How much did you spend?\n")) 
+
+a=budget - spent 
+
+#print("You have" + money + "left")
+print (a)
 #Spent = 1 
 #Did you spend any more ? yes/no to continue 
 while True:
-    cont= input('Did you spend anymore money? Yes or No\n')
-    spenta= int(input("How much did you spend?\n")) 
-    if cont == "no":
+    cont= input('Did you spend anymore money? Yes or No\n')   
+    if cont == "yes": 
+        sp= int(input("How much did you spend?\n"))
+        b=a - sp 
+    elif cont == "no":
       break 
-
-print("this works")
+final=b
+print ("You have: ")
+print(final)
 #(Loops until no)
 #If continued 
 #How much did you spend?
