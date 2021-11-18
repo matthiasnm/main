@@ -16,11 +16,11 @@ print (a)
 while True:
     cont= input('Did you spend anymore money? Yes or No\n')   
     if cont == "yes": 
-        sp= int(input("How much did you spend?\n"))
-        b=a - sp 
+        c= int(input("How much did you spend?\n"))
+        a=a - c 
     elif cont == "no":
       break 
-final=b
+final=a
 print ("You have: ")
 print(final)
 #(Loops until no)
